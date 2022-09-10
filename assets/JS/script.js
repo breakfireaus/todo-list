@@ -49,7 +49,7 @@ function Displaytodos () {
         input.type = 'checkbox';
         input.checked = todo.done;
         span.classList.add('bubble')
-        if (todo.category == 'personal'); {
+        if (todo.category == 'personal') {
             span.classList.add('personal');
             } else  {
                 span.classList.add('business')
