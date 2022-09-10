@@ -49,10 +49,9 @@ function Displaytodos () {
         input.type = 'checkbox';
         input.checked = todo.done;
         span.classList.add('bubble')
-
-        of (todo.category == 'personal'); {
+        if (todo.category == 'personal'); {
             span.classList.add('personal');
-            } else{
+            } else  {
                 span.classList.add('business')
             }
 
@@ -61,7 +60,7 @@ function Displaytodos () {
             edit.classList.add('edit');
             deleteButton.classList.add('delete');
 
-            content.innerHTML = '<input type='text' value='${todo.content}' readonly>';
+            content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
             edit.innerHTML = 'Edit';
             deleteButton.innerHTML = 'Delete';
 
@@ -103,11 +102,11 @@ function Displaytodos () {
                 })
             })
 
-            deleteButton.addEventListener('click',) e => {
+            deleteButton.addEventListener('click', (e) => {
                 todos = todos.filter(t => t != todo);
                 localStorage.setItem('todos', JSON.stringify(todos));
                 Displaytodos();
-            }
-    });
+            })
+    })
 }
 
