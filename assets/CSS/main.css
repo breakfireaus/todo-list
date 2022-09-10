@@ -19,6 +19,13 @@
     font-family: 'montserrat', sans-serif;
 }
 
+
+#header-title{
+    padding-top: 5px;
+    text-align: center;
+}
+
+
 input:not([type="radio"]):not([type="checkbox"]),
 button {
     appearance: none;
@@ -54,6 +61,9 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
+#name{
+    font-size: 24px;
+}
 .greeting .title {
     display: flex;
 }
