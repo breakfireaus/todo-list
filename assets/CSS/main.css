@@ -238,7 +238,7 @@ input:checked~.bubble::after {
     background-color: var(--danger);
 }
 
-.todo-item .todo-content input {
+.todo-item.done .todo-content  input {
     text-decoration: line-through;
     color: var(--grey);
 }

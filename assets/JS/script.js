@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 
     nameInput.value = username;
 
-    nameInput.addEventListener('change', (e) => {
+    nameInput.addEventListener('change', e => {
         localStorage.setItem('username', e.target.value);
     })
 
@@ -51,6 +51,7 @@ function Displaytodos() {
         input.type = 'checkbox';
         input.checked = todo.done;
         span.classList.add('bubble');
+
         if (todo.category == 'personal') {
             span.classList.add('personal');
         } else {
@@ -79,7 +80,7 @@ function Displaytodos() {
             todoItem.classList.add('done')
         }
         
-        input.addEventListener('change', (e) => {
+        input.addEventListener('click', (e) => {
             todo.done = e.target.checked;
             localStorage.setItem('todos', JSON.stringify(todos));
 
