@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 
     nameInput.value = username;
 
-    nameInput.addEventListener('change', e => {
+    nameInput.addEventListener('change', (e) => {
         localStorage.setItem('username', e.target.value);
     })
 
@@ -78,6 +78,7 @@ function Displaytodos() {
         if (todo.done) {
             todoItem.classList.add('done')
         }
+        
         input.addEventListener('change', (e) => {
             todo.done = e.target.checked;
             localStorage.setItem('todos', JSON.stringify(todos));
