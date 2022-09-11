@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task list 2022</title>
+    <link rel="stylesheet" href="./assets/CSS/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    
-    <link rel="stylesheet" href="./assets/CSS/main.css" />
 </head>
 
 <body>
@@ -25,7 +24,7 @@
             <h3>CREATE A TODO</h3>
             <form id="new-todo-form">
                 <h4>What's on your todo</h4>
-                <input type="text" name="content" id="content" placeholder="e.g. make a video" />
+                <input type="text" name="content" id="content" placeholder="e.g. get some milk" />
 
                 <h4>Pick a category</h4>
                 <div class="options">
@@ -45,35 +44,7 @@
         </section>
         <section class="todo-list">
             <h3>TODO LIST</h3>
-            <div class="list" id="todo-list">
-                <!-- <div class="todo-item done">
-                    <label>
-                        <input type="checkbox" />
-                        <span class="bubble business"></span>
-                    </label>
-                    <div class="todo-content">
-                        <input type="text" value="Make a video" readonly />
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
-            
-            <div class="v todo-item">
-                <label>
-                    <input type="checkbox" />
-                    <span class="bubble personal"></span>
-                </label>
-                <div class="todo-content">
-                    <input type="text" value="Get milk" readonly />
-                </div>
-                <div class="actions">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>
-                </div>
-            </div> -->
-        </div>
+            <div class="list" id="todo-list"></div>
         </section>
     </main>
     <script src="./assets/JS/script.js"></script>

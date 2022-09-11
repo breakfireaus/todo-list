@@ -20,7 +20,7 @@
 }
 
 
-#header-title{
+#header-title {
     padding-top: 5px;
     text-align: center;
 }
@@ -61,9 +61,10 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
-#name{
+#name {
     font-size: 24px;
 }
+
 .greeting .title {
     display: flex;
 }
@@ -128,29 +129,29 @@ input[type="checkbox"] {
     box-shadow: var(--business-glow);
 }
 
-.bubble.personal{
+.bubble.personal {
     border-color: var(--personal);
     box-shadow: var(--personal-glow);
 }
 
 .bubble::after {
-    content: "" ;
+    content: '';
     display: block;
     opacity: 0;
     width: 0px;
     height: 0px;
     background-color: var(--business);
     box-shadow: var(--business-glow);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out ;
+    border-radius: 999px;
+    transition: 0.2s ease-in-out;
 }
 
-.bubble.personal::after{
-background-color: var(--personal);
+.bubble.personal::after {
+    background-color: var(--personal);
     box-shadow: var(--personal-glow);
 }
 
-input:checked ~ .bubble::after {
+input:checked~.bubble::after {
     width: 10px;
     height: 10px;
     opacity: 1;
@@ -162,20 +163,22 @@ input:checked ~ .bubble::after {
     margin-top: 1rem;
 }
 
-.create-todo input[type="submit"]{
+.create-todo input[type="submit"] {
     display: block;
-width: 100%;
-font-size: 1.125rem;
-padding: 1rem;
-color: #FFF;
-background-color: var(--primary);
-border-radius: 0.5rem;
-box-shadow: var(--personal-glow);
-cursor: pointer;
-transition: 0.2s ease-in-out;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: var(--personal-glow);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
-.create-todo input[type="submit"]:hover{
+.create-todo input[type="submit"]:hover {
     opacity: 0.75;
 }
 
@@ -204,8 +207,8 @@ transition: 0.2s ease-in-out;
 }
 
 .todo-item .todo-content input {
-color: var(--dark);
-font-size: 1.1.125rem;
+    color: var(--dark);
+    font-size: 1.1.125rem;
 }
 
 .todo-item .actions {
@@ -221,7 +224,8 @@ font-size: 1.1.125rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
-.todo-item .actions button:hover{
+
+.todo-item .actions button:hover {
     opacity: 0.75;
 }
 
